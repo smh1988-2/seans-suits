@@ -147,6 +147,10 @@ h4 {
   text-transform: uppercase;
 }
 
+.btn-container {
+  padding: 1.5rem 0rem;
+}
+
 .white-btn {
   background-color: #fff;
   border: 2px solid var(--blue-bg-color);
@@ -162,7 +166,6 @@ h4 {
 header {
   width: 100%;
   height: 5rem;
-  padding: 0rem 3rem;
   text-transform: uppercase;
   text-align: center;
   display: flex;
@@ -175,12 +178,14 @@ header {
   color: var(--dark-gray-bg-color);
   font-size: 1.25rem;
   font-weight: 800;
+  padding-left: 3rem;
 }
 
 .tagline {
   font-weight: 300;
   font-size: 0.55rem;
   padding-top: 0.2rem;
+  padding-left: 3rem;
   letter-spacing: 0.1rem;
 }
 
@@ -213,7 +218,6 @@ h1 {
 }
 
 .line {
-  content: "";
   border-bottom: 1px solid #fff;
 }
 
@@ -227,26 +231,87 @@ h1 {
   }
 }
 
-.hero-btn-container {
-  padding: 1.5rem 0rem;
-}
-
 /* UNIQUE SELLING POINT */
 
 .usp {
-    width: 100%;
-    text-align: center;
-    font-size: .85rem;
-    padding: 2rem 10rem;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .usp-header {
-    font-size: 1.75rem;
-    padding-bottom: 2rem;
+  font-size: 1.75rem;
+  padding-bottom: 0rem;
+}
+
+.usp-line {
+  width: 7rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid var(--light-gray-footer-color);
 }
 
 .usp-text {
-    padding: 0rem 25rem;
-    padding-bottom: 2rem;
+  padding: 0rem 25rem;
+  padding-bottom: 1rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .usp-text {
+    padding: 1rem 1rem;
+  }
+}
+
+/* BENEFITS */
+
+.benefits {
+  background-color: var(--blue-bg-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.benefit {
+  padding: 2rem 2rem;
+  width: 15rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: 0.85rem;
+}
+
+.benefit-image {
+  border-radius: 100%;
+}
+
+.benefit-line {
+  width: 50%;
+  padding-bottom: 2rem;
+  border-top: 2px solid #fff;
+}
+
+.benefit > h2 {
+  font-size: 1.25rem;
+  padding: 0.9rem 0rem;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--blue-bg-color);
+}
