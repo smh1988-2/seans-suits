@@ -105,9 +105,7 @@ nav,
 section {
   display: block;
 }
-/* body {
-	line-height: 1;
-} */
+
 ol,
 ul {
   list-style: none;
@@ -172,11 +170,11 @@ h4 {
   background-color: #fff;
   border: 2px solid var(--blue-bg-color);
   color: var(--blue-bg-color);
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2rem;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 0.9rem;
-  font-weight: 800;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -194,21 +192,21 @@ header {
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
+  line-height: 1.2;
 }
 
 .brand {
   color: var(--dark-gray-bg-color);
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   padding-left: 3rem;
 }
 
 .tagline {
   font-weight: 300;
   font-size: 0.55rem;
-  padding-top: 0.2rem;
+  padding-top: 0rem;
   padding-left: 3rem;
-  letter-spacing: 0.1rem;
 }
 
 /* HERO */
@@ -298,11 +296,11 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .benefit {
-  padding: 2rem 2rem;
+  padding: 2rem 5rem;
   width: 15rem;
   display: flex;
   flex-flow: row wrap;
@@ -380,18 +378,40 @@ h1 {
 /* TESTIMONIALS */
 
 .testimonials-header {
-    font-size: .85rem!important;
+  font-size: 0.85rem !important;
 }
 
 blockquote {
-    font-size: 1.5rem;
-    font-style: italic;
-    padding: 2rem 25rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 2rem 25rem;
 }
 
 @media only screen and (max-width: 1100px) {
-    blockquote {
-        padding: 2rem 2rem;
-    }
-    
+  blockquote {
+    padding: 2rem 2rem;
   }
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.social-media-container {
+  padding-top: 2rem;
+}
+
+.social-logo {
+  padding: 0rem 1rem;
+}
+
+.copyright {
+  font-size: 0.6rem;
+  color: var(--light-gray-footer-color);
+  padding-top: 0.5rem;
+  padding-bottom: 3.5rem;
+}
